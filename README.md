@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-09-15 15:18:37
- * @LastEditTime: 2020-09-15 15:36:24
+ * @LastEditTime: 2020-09-15 15:41:24
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \calendarf:\GIT\calendar-pro\README.md
@@ -19,4 +19,4 @@
 2. change(val) 切换时间
 3. getActive(val) 获取选中时间
 
-![](calendar.jpg)
+![效果图](https://github.com/Lingtian007/calendar-pro/blob/master/img/calendar.jpg)
