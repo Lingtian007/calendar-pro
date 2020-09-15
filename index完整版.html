@@ -1,0 +1,112 @@
+<!--
+ * @Author: your name
+ * @Date: 2017-07-22 10:44:23
+ * @LastEditTime: 2020-09-15 14:59:18
+ * @LastEditors: Please set LastEditors
+ * @Description: In User Settings Edit
+ * @FilePath: \calendar\index.html
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/calendar-pro2.css" />
+	</head>
+	<body>
+		<!-- 容器布局 -->
+		<div class="demo-box2">
+
+			<button class="changeBtn" style="margin-right: 30px;" onclick="change(1)">月</button> |
+			<button class="changeBtn" style="margin-right: 22px;" onclick="change(2)">年</button> |
+			<button class="changeBtn" onclick="change(3)">跨年</button> <br>
+			<button class="changeBtn" onclick="getActive(1)">选中月</button> |
+			<button class="changeBtn" onclick="getActive('year')">选中年</button> |
+			<button class="changeBtn" onclick="getActive('nearyear')">选中跨年</button>
+		</div>
+		<div class="calendar-box demo-box">
+		</div>
+		
+	</body>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<!-- <script src="js/calendar-pro.js"></script> -->
+	<script src="js/calendar-pro-last.js"></script>
+	<script>
+		let dataArr = [
+		       { date: "2020-08-03", data: "58" },
+            { date: "2020-08-04", data: "-59" },
+            { date: "2020-08-05", data: "105" },
+            { date: "2020-08-06", data: "-11" },
+            { date: "2020-08-07", data: "112" },
+						{ date: "2020-08-10", data: "" }
+		]
+		function init(dataArr,types,date) {
+			
+			$('.calendar-box').calendar({
+				ele : '.demo-box', //依附
+				types: types, // 数据类型 Yield detail
+        date: date, // 时间类型 year day
+				data : dataArr
+			});
+		}
+		init(dataArr,'detail',"day")
+		function getActive(val){
+			var data = $('.demo-box').calendarGetActive(val);
+			console.log(data);
+			alert(data);
+		}
+		function change(val){
+			$(".demo-box").empty()
+			let arr = []
+			let types=''
+			let date = ''
+			if (val == 1 ) {
+				arr=[ { date: "2020-08-03", data: "58" },
+            { date: "2020-08-04", data: "-59" },
+            { date: "2020-08-05", data: "105" },
+            { date: "2020-08-06", data: "-11" },
+            { date: "2020-08-07", data: "112" },
+						{ date: "2020-08-10", data: "" }] // 月
+						types = 'detail'
+						date = 'day'
+			} else if (val == 2 ){
+				arr=[
+				{ date: "2020-01-00", data: "58%" },
+            { date: "2020-02-00", data: "-59%" },
+            { date: "2020-03-00", data: "15%" },
+            { date: "2020-04-00", data: "-11%" },
+            { date: "2020-05-00", data: "12%" },
+            { date: "2020-06-00", data: "" },
+            { date: "2020-07-00", data: "" },
+            { date: "2020-08-00", data: "" },
+            { date: "2020-09-00", data: "" },
+            { date: "2020-10-00", data: "" },
+            { date: "2020-11-00", data: "" },
+						{ date: "2020-12-00", data: "" }
+						
+				] // 全年
+				types = 'detail'
+						date = 'year'
+			}else if (val == 3 ){
+				arr=[
+				{ date: "2019-02-00", data: "-59" },
+					{ date: "2019-03-00", data: "105" },
+					{ date: "2019-04-00", data: "-11" },
+					{ date: "2019-05-00", data: "112" },
+					{ date: "2019-06-00", data: "56" },
+					{ date: "2019-07-00", data: "44" },
+					{ date: "2019-08-00", data: "-22" },
+					{ date: "2019-09-00", data: "333" },
+					{ date: "2019-10-00", data: "444" },
+					{ date: "2019-11-00", data: "4556" },
+					{ date: "2019-12-00", data: "234" },
+					{ date: "2020-01-00", data: "5822222" }
+				] //跨年时
+				types = 'detail'
+						date = 'year'
+			}
+			init(arr,types,date)
+		}
+		
+	</script>
+</html>

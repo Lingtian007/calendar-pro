@@ -1,0 +1,307 @@
+/** ----------日历样式 start-----------/
+.demo-box{
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  height: 350px;
+  overflow: hidden;
+  background: #ffffff;
+
+}
+/**--------- 月-高度---------*/
+.demo-box-Yield{
+  width: calc(100% + 30px);
+  margin-left: -15px;
+
+  height: 405px;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 10px;
+
+}
+.demo-box-detail{
+  width: calc(100% + 30px);
+  margin-left: -15px;
+
+  height: 405px;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 10px;
+
+}
+/** ------------------------
+//-------- 年-高度---------*/
+.demo-box-year-detail{
+  height: 190px;
+  padding-bottom: 20px;
+
+  margin-bottom: 20px;
+  overflow: hidden;
+  background: #fff;
+}
+.demo-box-year-Yield{
+  height: 190px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background: #fff;
+}
+.demo-box-nearyear-detail{
+  height: 190px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background: #fff;
+}
+.demo-box-nearyear-Yield{
+  height: 190px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background: #fff;
+}
+
+
+/**---------------------------*/
+.changeBtn {
+  /* float: left; */
+  margin-top: 20px;
+  color: aqua;
+}
+/*******单独组件样式********/
+
+.ht-rili-head{
+  background-color: #fff;
+  margin-left: -15px;
+  width:calc(100% + 30px);
+  height: 50px;
+}
+.ht-rili-querybox{
+  overflow: hidden;
+}
+.ht-rili-title{
+  padding: 10px;
+  display: inline-block;
+  max-width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.ht-rili-datebox{
+  float: right;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 10px;
+}
+.ht-rili-date{
+  text-align: center;
+  display: inline-block;
+  width: 100px;
+  height: 19px;
+  line-height: 19px;
+  vertical-align: middle;
+}
+.ht-rili-th{
+  width: 14.25%;
+  float: left;
+  text-align: center;
+  height: 44px;
+  font-size: 14px;
+  line-height: 44px;
+  background: #FAFAFA;
+  color: #777777;
+}
+.ht-rili-td{
+  width: 14.25%;
+  float: left;
+  text-align: center;
+  height:60px;
+  /*line-height: 50px;*/
+  background: #fff;;
+  /*border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;*/
+  cursor: pointer;
+  position: relative;
+}
+.ht-rili-td-3{
+  width: 14.25%;
+  float: left;
+  text-align: center;
+  height:60px;
+  /*line-height: 50px;*/
+  background: #fff;
+  /*border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;*/
+  cursor: pointer;
+  position: relative;
+}
+.ht-rili-td-2{
+  width: 25%;
+  float: left;
+  text-align: center;
+  height:60px;
+  /*line-height: 50px;*/
+  background: #fff;
+  padding-top: 9px;
+  cursor: pointer;
+  position: relative;
+}
+.ht-rili-body{
+  overflow: hidden;
+  margin-top: 10px;
+  height: 405px;
+}
+.ht-rili-body-2{
+  overflow: hidden;
+  margin-top: 10px;
+  height: 405px;
+}
+.ht-rili-body-3{
+  overflow: hidden;
+  margin-top: 10px;
+  height: 405px;
+  width: 100%;
+}
+.ht-rili-body-4{
+  overflow: hidden;
+  margin-top: 10px;
+  height: 405px;
+  width: 100%;
+}
+.ht-rili-day{
+  font-family:Arial;
+
+  font-size: 17px;
+  display: inline-block;
+  width: 100%;
+}
+.ht-rili-money{
+  font-family:Arial;
+  display: inline-block;
+  width: 100%;
+  font-size: 13px;
+  color: #F62635;
+}
+.ht-rili-money-down{
+  font-family:Arial;
+  display: inline-block;
+  width: 100%;
+  font-size: 13px;
+  color: #4CAA5D;
+}
+.ht-rili-td-disabled{
+  color: #777777 ;
+}
+.ht-rili-td-disabled-2{
+  color: #777777 ;
+}
+.ht-rili-td-active{
+
+  background: #F9F9F9;
+}
+.ht-rili-td-active-nows {
+  background: #F9F9F9;
+}
+
+.ht-rili-td-active-now {
+  background:  rgb(236, 10, 10);
+  height: 9px;
+  width: 16px;
+  border-radius: 8px 0 0 ;
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  top: 50px;
+}
+
+
+.ht-rili-td-active-now:before,
+.ht-rili-td-active-now:after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  color: black;
+  border: 1px solid rgb(238, 232, 232);
+  background-color: white;
+}
+
+
+.ht-rili-td-active-now:before {
+  width: 1px;
+  height: 0px;
+  left: 20%;
+  top: 50%;
+  transform: skew(0deg, 50deg);
+}
+
+
+.ht-rili-td-active-now:after {
+  width: 4px;
+  height: 0px;
+  left: 40%;
+  top: 40%;
+  transform: skew(0deg, -35deg);
+}
+/**
+.ht-rili-td-active-now:before {
+  width: 1px;
+  height: 0px;
+  left: 29%;
+  top: 51%;
+  transform: skew(0deg, 50deg);
+}
+
+
+.ht-rili-td-active-now:after {
+  width: 4px;
+  height: 0px;
+  left: 45%;
+  top: 50%;
+  transform: skew(0deg, -35deg);
+}
+*/
+.ht-rili-td-active-now-year {
+  background:  rgb(236, 10, 10);
+  height: 9px;
+  width: 16px;
+  border-radius: 8px 0 0 ;
+  display: inline-block;
+  position: absolute;
+  top: 55px;
+  right: 0;
+}
+
+
+.ht-rili-td-active-now-year:before,
+.ht-rili-td-active-now-year:after {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  color: black;
+  border: 1px solid rgb(238, 232, 232);
+  background-color: white;
+}
+
+
+.ht-rili-td-active-now-year:before {
+  width: 1px;
+  height: 0px;
+  left: 20%;
+  top: 50%;
+  transform: skew(0deg, 50deg);
+}
+
+
+.ht-rili-td-active-now-year:after {
+  width: 4px;
+  height: 0px;
+  left: 40%;
+  top: 40%;
+  transform: skew(0deg, -50deg);
+}
+
+.ht-rili-td-2-active{
+
+  background: #F9F9F9;
+}
+/**----- 日历样式end ------*/
