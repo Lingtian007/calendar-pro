@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2017-07-22 10:44:23
- * @LastEditTime: 2020-09-15 14:59:18
+ * @LastEditTime: 2020-09-15 15:26:18
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \calendar\index.html
@@ -17,14 +17,14 @@
 		<!-- 容器布局 -->
 		<div class="demo-box2">
 
-			<button class="changeBtn" style="margin-right: 30px;" onclick="change(1)">月</button> |
-			<button class="changeBtn" style="margin-right: 22px;" onclick="change(2)">年</button> |
-			<button class="changeBtn" onclick="change(3)">跨年</button> <br>
-			<button class="changeBtn" onclick="getActive(1)">选中月</button> |
-			<button class="changeBtn" onclick="getActive('year')">选中年</button> |
-			<button class="changeBtn" onclick="getActive('nearyear')">选中跨年</button>
+			<button class="changeBtn" style="margin-right: 30px;" onclick="change(1)">月</button> 
+			<button class="changeBtn" style="margin-right: 22px;" onclick="change(2)">年</button>
+			<button class="changeBtn" onclick="change(3)">跨年</button> 
+			<!-- <button class="changeBtn" onclick="getActive(1)">选中</button> |
+			<button class="changeBtn" onclick="getActive('year')">选中</button> |
+			<button class="changeBtn" onclick="getActive('nearyear')">选中</button> -->
 		</div>
-		<div class="calendar-box demo-box">
+		<div class="calendar-box demo-box"  onclick="getActive(1)">
 		</div>
 		
 	</body>
@@ -53,7 +53,10 @@
 		function getActive(val){
 			var data = $('.demo-box').calendarGetActive(val);
 			console.log(data);
-			alert(data);
+			setTimeout(() => {
+				
+				alert(data);
+			}, 100);
 		}
 		function change(val){
 			$(".demo-box").empty()
