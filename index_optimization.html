@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2017-07-22 10:44:23
- * @LastEditTime: 2020-09-17 13:45:11
+ * @LastEditTime: 2020-09-17 17:32:24
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \calendar\index.html
@@ -20,11 +20,11 @@
 			<button class="changeBtn" style="margin-right: 30px;" onclick="change_time_type(1)">月</button> 
 			<button class="changeBtn" style="margin-right: 22px;" onclick="change_time_type(2)">年</button>
 			<button class="changeBtn" onclick="change_time_type(3)">跨年</button> 
-			<!-- <button class="changeBtn" onclick="getActive(1)">选中</button> |
-			<button class="changeBtn" onclick="getActive('year')">选中</button> |
-			<button class="changeBtn" onclick="getActive('nearyear')">选中</button> -->
+			<!-- <button class="changeBtn" onclick="get_active(1)">选中</button> |
+			<button class="changeBtn" onclick="get_active('year')">选中</button> |
+			<button class="changeBtn" onclick="get_active('nearyear')">选中</button> -->
 		</div>
-		<div class="calendar-box demo-box"  onclick="getActive(1)">
+		<div class="calendar-box demo-box"  onclick="get_active(1)">
 		</div>
 		
 	</body>
@@ -50,7 +50,7 @@
 			});
 		}
 		init_calendar(dataArr,'detail',"day")
-		function getActive(val){
+		function get_active(val){
 			var data = $('.demo-box').calendarGetActive(val);
 			console.log(data);
 			setTimeout(() => {
