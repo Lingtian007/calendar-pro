@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-09-15 15:18:37
- * @LastEditTime: 2020-09-15 15:42:39
+ * @LastEditTime: 2020-09-17 14:15:30
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \calendarf:\GIT\calendar-pro\README.md
@@ -9,15 +9,19 @@
 # 基于jq的-日历组件
 [jquery官网](https://jquery.com/)
 ## 参数:
-1. 	ele : '.demo-box', //依附
-2.  types: types, // 数据类型 Yield detail
-3.  date: date, // 时间类型  day year 
-4.  data : dataArr // 数据数组
+| 参数        |           可选值              |  注释  |
+| --------   |           -----:              | :----: |
+| ele        | '.demo-box'                   |  依附   |
+| types      | Yield detail                  |   数据类型 |
+| date       | day year                      |   时间类型 |
+| data       | [date:'1',date:'2020-01-01']  |   数据数组 |
 
 ## 事件:
-1. init(dataArr,types,date) 初始化 
-2. change(val) 切换时间
-3. getActive(val) 获取选中时间
+| 事件      | 参数    |  注释  |
+| --------   | -----:  | :----: |
+| init_calendar     | dataArr,types,date |  初始化  |
+| change_time_type      | val|  切换时间  |
+|  getActive    |  getActive |  获取选中时间  |
 
 ## 效果图
-![](https://github.com/Lingtian007/calendar-pro/blob/master/img/calendar.jpg)
+![](https://github.com/Lingtian007/calendar-pro/blob/master/img/calendar.gif)
