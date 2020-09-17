@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-09-15 15:18:37
- * @LastEditTime: 2020-09-17 14:15:30
+ * @LastEditTime: 2020-09-17 14:19:55
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \calendarf:\GIT\calendar-pro\README.md
@@ -11,10 +11,10 @@
 ## 参数:
 | 参数        |           可选值              |  注释  |
 | --------   |           -----:              | :----: |
-| ele        | '.demo-box'                   |  依附   |
+| ele        | .demo-box'                  |  依附   |
 | types      | Yield detail                  |   数据类型 |
 | date       | day year                      |   时间类型 |
-| data       | [date:'1',date:'2020-01-01']  |   数据数组 |
+| data       | [date:x,date:x]  |   数据数组 |
 
 ## 事件:
 | 事件      | 参数    |  注释  |
