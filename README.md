@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2020-09-15 15:18:37
- * @LastEditTime: 2020-09-17 14:31:15
+ * @LastEditTime: 2020-09-17 14:33:15
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \calendarf:\GIT\calendar-pro\README.md
@@ -20,8 +20,8 @@
 | 事件      | 参数    |  注释  |
 | --------   | -----:  | :----: |
 | init_calendar     | dataArr,types,date |  初始化  |
-| change_time_type      | val|  切换时间  |
-|  getActive    |  getActive |  获取选中时间  |
+| change_time_type      | 1-月 2-年 3-跨年|  切换时间  |
+|  getActive    |  val |  获取选中时间  |
 
 ## 效果图
 ![](https://github.com/Lingtian007/calendar-pro/blob/master/img/calendar.gif)
